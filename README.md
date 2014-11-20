@@ -36,10 +36,7 @@ Create your controller with some proprety (include angular-price-format dependen
         $scope.test3  = 0;
     }]);
 </script>
-```
 
-Create some input like this:
-```html
 <div ng-app="priceFormat" id='examples'>
     Basic Usage
     <input type="text" ng-model="test1" pformat/> <br/>
