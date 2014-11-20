@@ -1,14 +1,12 @@
 {
-  "name": "Financee-AngularCharts",
-  "version": "0.5.1",
-  "description": "interative and automatized google charts using angularjs",
+  "name": "angular-price-format",
+  "version": "0.0.1",
+  "description": "Jquery price format directive 4 angularjs",
   "main": "Gruntfile.js",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-compass": "^0.7.2",
     "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-livereload": "^0.1.3",
@@ -19,22 +17,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Finance-e/angularcharts.git"
+    "url": "https://github.com/Finance-e/angular-price-format.git"
   },
   "keywords": [
-    "angularcharts",
-    "angucharts",
-    "financee",
-    "google",
-    "charts",
-    "angularjs",
-    "javascript",
-    "charts"
+    "currency mask",
+    "angularjs currency mask",
+    "currency",
+    "mask",
+    "currency directive",
+    "priceformat",
+    "angularjs priceformat"
   ],
   "author": "Finance-e",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/Finance-e/angularcharts/issues"
+    "url": "https://github.com/Finance-e/angular-price-format/issues"
   },
-  "homepage": "https://github.com/Finance-e/angularcharts"
+  "homepage": "https://github.com/Finance-e/angular-price-format"
 }
