@@ -19,14 +19,14 @@ This will copy the angular-price-format files into a `bower_components` folder, 
 
 ## Usage
 
-### Include angular, jquery and angular-price-format scripts in your project:
+Include angular, jquery and angular-price-format scripts in your project:
 ```html
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/angular-price-format/dist/angular-price-format.min.js"></script>
 ```
 
-### Create your controller with some proprety (include angular-price-format dependence)
+Create your controller with some proprety (include angular-price-format dependence)
 ```html
 <script>
     angular.module('myPrivateModule', ['angular-price-format']).
@@ -38,7 +38,7 @@ This will copy the angular-price-format files into a `bower_components` folder, 
 </script>
 ```
 
-### Create some input like this:
+Create some input like this:
 ```html
 <div ng-app="priceFormat" id='examples'>
     Basic Usage
@@ -49,7 +49,7 @@ This will copy the angular-price-format files into a `bower_components` folder, 
 </div>
 ```
 
-### Grunt Serve
+## Grunt Serve
 We have one grunt task to run server (the index file run live examples)
 
 ```sh
