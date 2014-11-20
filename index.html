@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="jquery price format directive for angularjs">
+    <meta name="author" content="@tigredonorte">
+    <title>AngularJs Price Format Directive</title>
+    <link rel='stylesheet' type='text/css' href='bower_components/bootstrap/dist/css/bootstrap.min.css' media='screen'/>
+    <link rel='stylesheet' type='text/css' href='bower_components/bootstrap/dist/css/bootstrap-theme.min.css' media='screen'/>
+    <link rel='stylesheet' type='text/css' href='bower_components/components-font-awesome/css/font-awesome.min.css' media='screen'/>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+        <h1>Angular Price Format</h1>
+        <p>A Jquery Price Format Directive for AngularJS</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="https://github.com/Finance-e/angular-price-format" role="button"><i class="fa fa2x fa-github"></i> GitHub Project</a>
+            <a class="btn btn-primary btn-lg" href="#examples" role="button">Examples</a>
+        </p>
+    </div>
+      
+    <div class='container container-fluid center-block col-lg-12'>
+        <div id="install">
+            <h2>Installation</h2>
+            <p>Install bower dependence</p>
+            <pre>bower install angular-price-format</pre>
+        </div>
+        <div id="usage">
+            <h2>Basic Usage</h2>
+            <p>You must include angularjs, jquery and angular-price-format scripts: </p>
+            <pre>&lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;<br/>&lt;script src=&quot;bower_components/angular/angular.min.js&quot;&gt;&lt;/script&gt;<br/>&lt;script src=&quot;dist/angular-price-format.min.js&quot;&gt;&lt;/script&gt;</pre>
+            <p>Create your controller with some proprety (include angular-price-format dependence) </p>
+            <pre>&lt;script&gt;
+    angular.module('myModule', ['angular-price-format']).
+    controller('priceFormatCTRL', ['$scope', function($scope) {
+        $scope.test  = 0;
+    }]);<br/>&lt;/script&gt;</pre>
+        </div>
+        <div ng-app="priceFormat" id='examples'>
+            <h2>Examples</h2>
+            <div ng-controller="priceFormatCTRL" class="center-block">
+                <div class='example col-lg-12'>
+                    <h3>Simple Example</h3>
+                    <pre>&lt;input id='ex1' type="text" class='form-control' ng-model="test" pformat/&gt</pre>
+                    <div class="form_item form-group col-lg-5 col-sm-12">
+                        <label for="ex1" id="lex1" class="control-label caption"><span>Live Demo</span></label>
+                        <input id='ex1' type="text" class='form-control' ng-model="test" pformat/>
+                        
+                        <div>Result: <span>{{test}}</span></div>
+                    </div>
+                </div>
+                <div class='example col-lg-12'>
+                    <h3>Easy javascript number manipulation</h3>
+                    <pre>&lt;input id='ex2' type="text" class='form-control' ng-model="test2" pformat prefix="" cents='.' thousands=''/&gt</pre>
+                    <div class="form_item form-group col-lg-5 col-sm-12">
+                        <label for="ex2" id="lex2" class="control-label caption"><span>Live Demo</span></label>
+                        <input id='ex2' type="text" class='form-control' ng-model="test2" pformat prefix="" cents='.' thousands=''/> 
+                        <div>Result: <span>{{test2}}</span></div>
+                    </div>
+                </div>
+                <div class='example col-lg-12'>
+                    <h3>Country currency</h3>
+                    <pre>&lt;input id='ex3' type="text" class='form-control' ng-model="test3" pformat prefix="R$ " cents=',' thousands='.'/&gt</pre>
+                    <div class="form_item form-group col-lg-5 col-sm-12">
+                        <label for="ex3" id="lex3" class="control-label caption"><span>Live Demo</span></label>
+                        <input id='ex3' type="text" class='form-control' ng-model="test3" pformat prefix="R$ " cents=',' thousands='.'/> 
+                        
+                        <div>Result: <span>{{test3}}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class='col-lg-12'>
+        <div class="container">
+            <div class="row">
+                <p class="pull-left">© <a href="http://www.finance-e.com" target="_blank">Finance-e</a> 2014</p>
+            </div>
+        </div>        
+    </div>
+      
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="dist/angular-price-format.min.js"></script>
+    <script>
+        angular.module('priceFormat', ['angular-price-format']).
+            controller('priceFormatCTRL', ['$scope', function($scope) {
+                $scope.test  = 0;
+                $scope.test2 = 0;
+                $scope.test3 = 0;
+                $scope.test4 = 0;
+            }]);
+    </script>
+  </body>
+</html>
+
