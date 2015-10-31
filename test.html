@@ -81,15 +81,22 @@
                     </div>
                 </div>
                 <div class='example col-lg-12'>
-                    <h3>Negative And Positive Signs</h3>
+                    <h3>Negative option</h3>
                     <pre>&lt;input id='ex5' type="text" class='form-control' ng-model="test5" pformat negative="true"/&gt</pre>
                     <div class="form_item form-group col-lg-5 col-sm-12">
                         <label for="ex5" id="lex5" class="control-label caption"><span>Live Demo</span></label>
                         <input id='ex5' type="text" class='form-control' ng-model="test5" pformat negative="true"/> 
+                        
                         <div>Result: <span>{{test5}}</span></div>
-                        <br/>
+                    </div>
+                </div>
+                <div class='example col-lg-12'>
+                    <h3>Plus Sign option</h3>
+                    <pre>&lt;input id='ex6' type="text" class='form-control' ng-model="test6" pformat plus="true"/&gt</pre>
+                    <div class="form_item form-group col-lg-5 col-sm-12">
                         <label for="ex6" id="lex6" class="control-label caption"><span>Live Demo</span></label>
                         <input id='ex6' type="text" class='form-control' ng-model="test6" pformat plus="true"/> 
+                        
                         <div>Result: <span>{{test6}}</span></div>
                     </div>
                 </div>
@@ -107,7 +114,8 @@
       
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
-    <script src="dist/angular-price-format.min.js"></script>
+    <script src="js/jquery-price-format.js"></script>
+    <script src="js/angular-price-format.js"></script>
     <script>
         angular.module('priceFormat', ['angular-price-format']).
             controller('priceFormatCTRL', ['$scope', function($scope) {

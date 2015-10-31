@@ -14,18 +14,18 @@
         };
         var options = $.extend(defaults, options);
         return this.each(function () {
-            var obj = $(this);
-            var is_number = /[0-9]/;
-            var prefix = options.prefix;
-            var suffix = options.suffix;
-            var centsSeparator = options.centsSeparator;
+            var obj                = $(this);
+            var is_number          = /[0-9]/;
+            var prefix             = options.prefix;
+            var suffix             = options.suffix;
+            var centsSeparator     = options.centsSeparator;
             var thousandsSeparator = options.thousandsSeparator;
-            var limit = options.limit;
-            var centsLimit = options.centsLimit;
-            var clearPrefix = options.clearPrefix;
-            var clearSuffix = options.clearSuffix;
-            var allowNegative = options.allowNegative;
-            var insertPlusSign = options.insertPlusSign;
+            var limit              = options.limit;
+            var centsLimit         = parseInt(options.centsLimit);
+            var clearPrefix        = options.clearPrefix;
+            var clearSuffix        = options.clearSuffix;
+            var allowNegative      = options.allowNegative;
+            var insertPlusSign     = options.insertPlusSign;
             if (insertPlusSign) allowNegative = true;
 
             function to_numbers(str) {
