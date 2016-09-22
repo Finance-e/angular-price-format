@@ -5,8 +5,7 @@ angular.module('angular-price-format', [])
         link: function (scope, elem, attrs, ctrl) {
             if (!ctrl) return;
             ctrl.$formatters.unshift(function (a) {
-                elem[0].value = parseFloat((ctrl.$modelValue * 100).toFixed(2));
-                //elem[0].value = ctrl.$modelValue * 100 ;
+                elem[0].value = parseFloat((ctrl.$modelValue * 100).toFixed((typeof attrs.decimals  === 'undefined')?2 :attrs.decimals));
                 elem.priceFormat({
                     prefix            : (typeof attrs.prefix    === 'undefined')?'' :attrs.prefix,
                     sufix             : (typeof attrs.sufix     === 'undefined')?'' :attrs.sufix,
