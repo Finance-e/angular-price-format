@@ -100,6 +100,16 @@
                         <div>Result: <span>{{test6}}</span></div>
                     </div>
                 </div>
+                <div class='example col-lg-12'>
+                    <h3>Decimals with more than two numbers</h3>
+                    <pre>&lt;input id='ex7' type="text" class='form-control' ng-model="test7" pformat  decimals="6"/&gt</pre>
+                    <div class="form_item form-group col-lg-5 col-sm-12">
+                        <label for="ex7" id="lex7" class="control-label caption"><span>Live Demo</span></label>
+                        <input id='ex7' type="text" class='form-control' ng-model="test7" pformat decimals="6"/> 
+                        
+                        <div>Result: <span>{{test7}}</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -125,6 +135,7 @@
                 $scope.test4 = 0;
                 $scope.test5 = -2;
                 $scope.test6 = 2;
+                $scope.test7 = 0.0000006;
             }]);
     </script>
   </body>

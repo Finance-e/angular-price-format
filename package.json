@@ -1,6 +1,6 @@
 {
   "name": "angular-price-format",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Jquery price format directive 4 angularjs",
   "main": "Gruntfile.js",
   "dependencies": {},
