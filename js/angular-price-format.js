@@ -15,7 +15,7 @@ angular.module('angular-price-format', [])
                 insertPlusSign    : (typeof attrs.plus      === 'undefined') ? ''  : attrs.plus
             };
             ctrl.$formatters.unshift(function() {
-                elem[0].value = parseFloat(ctrl.$modelValue * 100).toFixed(params.centsLimit - 2);
+                elem[0].value = parseFloat(ctrl.$modelValue * (Math.pow(10, params.centsLimit)).toFixed(params.centsLimit - 2);
                 elem.priceFormat(params);
                 return elem[0].value;
             });
